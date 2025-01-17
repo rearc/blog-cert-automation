@@ -37,9 +37,8 @@ The script accepts the following arguments:
 
 Example:
 ```sh
-python certificate_maintenance.py --days-to-expire 30  --aws-access-key-id YOUR_AWS_KEY --aws-secret-access-key YOUR_AWS_SECRET_KEY --region us-west-2
+python certificate_maintenance.py --days-to-expire 30 --key-bitsize 2048 --aws-access-key-id YOUR_AWS_KEY --aws-secret-access-key YOUR_AWS_SECRET_KEY --aws-region us-west-2
 ```
-
 
 ## Functions
 
@@ -62,7 +61,6 @@ python certificate_maintenance.py --days-to-expire 30  --aws-access-key-id YOUR_
 ### helpers.py
 
 - `format_certificate`: Formats a certificate string or a list of certificate strings to be well-formed with proper headers and footers.
-
 
 ## License
 
